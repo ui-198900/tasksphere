@@ -8,5 +8,19 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'tasksphere';
+  title = 'TaskSphere Application';
+  buttonText = "Check it"
+
+  changeTitle(){
+    // console.log("title", this.title)
+    this.title = 'TaskSphere Web Application'
+  }
+
+  checkMouseEnter(){
+    this.buttonText = 'You just hovered on me';
+  }
+
+  checkMouseLeave(){
+    this.buttonText = 'Check it';
+  }
 }
